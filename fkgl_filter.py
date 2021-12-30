@@ -8,7 +8,7 @@ path_en = sys.argv[1]
 path_sen = sys.argv[2]
 percent = sys.argv[3]
 
-os.mkdir("./data_" + percent + "percent", exist_ok=True)
+os.makedirs("./data_" + percent + "percent", exist_ok=True)
 
 diff = []
 with open(path_en, "r") as f1, open(path_sen, "r") as f2:
